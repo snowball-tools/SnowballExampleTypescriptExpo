@@ -1,5 +1,9 @@
 # Example Typescript React Native Expo App
 
+Spent a few hours on throwing an cross platform ios, android, and web app together using [Expo](https://expo.io/), [React Native](https://reactnative.dev/), and [Typescript](https://www.typescriptlang.org/)
+
+This is not designed to be a production app, but rather a quick example with localization, navigation, and a few other things.
+
 ## Getting Started
 
 ```bash
