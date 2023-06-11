@@ -1,0 +1,23 @@
+{
+  "welcome": "환영합니다",
+  "home": "홈",
+  "login": "로그인",
+  "register": "등록",
+  "username": "사용자 이름",
+  "password": "비밀번호",
+  "email": "이메일",
+  "forgotPassword": "비밀번호를 잊으셨나요",
+  "recoverPassword": "비밀번호 복구",
+  "submit": "제출",
+  "cancel": "취소",
+  "settings": "설정",
+  "profile": "프로필",
+  "logout": "로그아웃",
+  "search": "검색",
+  "language": "언어",
+  "theme": "테마",
+  "light": "밝은",
+  "dark": "어두운",
+  "save": "저장",
+  "delete": "삭제"
+}

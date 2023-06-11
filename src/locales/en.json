@@ -1,0 +1,23 @@
+{
+  "welcome": "Welcome",
+  "home": "Home",
+  "login": "Login",
+  "register": "Register",
+  "username": "Username",
+  "password": "Password",
+  "email": "Email",
+  "forgotPassword": "Forgot password",
+  "recoverPassword": "Recover password",
+  "submit": "Submit",
+  "cancel": "Cancel",
+  "settings": "Settings",
+  "profile": "Profile",
+  "logout": "Logout",
+  "search": "Search",
+  "language": "Language",
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "save": "Save",
+  "delete": "Delete"
+}

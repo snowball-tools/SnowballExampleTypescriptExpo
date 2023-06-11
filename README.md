@@ -1,9 +1,9 @@
-# Hanbitco
+# Example Typescript React Native Expo App
 
 ## Getting Started
 
 ```bash
-cd my-app
+cd example-typescript-expo
 yarn install
 ```
 

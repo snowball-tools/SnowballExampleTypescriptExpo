@@ -1,5 +1,7 @@
 {
-  "name": "hanbitco",
+  "name": "snowball-example-typescript-expo",
+  "author": "Snowball Tools",
+  "license": "MIT",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
@@ -8,15 +10,75 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
+    "@react-native-async-storage/async-storage": "1.17.11",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-native-masked-view/masked-view": "0.2.8",
+    "@react-native/assets-registry": "^0.73.0",
+    "@react-navigation/bottom-tabs": "^5.11.11",
+    "@react-navigation/material-top-tabs": "^5.3.15",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.12",
+    "@react-navigation/stack": "^6.3.16",
+    "@react-navigation/web": "^1.0.0-alpha.9",
     "@types/react": "~18.0.27",
-    "expo": "~48.0.18",
+    "axios": "^1.4.0",
+    "expo": "^48.0.19",
+    "expo-asset": "~8.9.1",
+    "expo-asset-web": "npm:expo-asset@8.7.0",
+    "expo-constants": "~14.2.1",
+    "expo-font": "~11.1.1",
+    "expo-linking": "~4.0.1",
+    "expo-localization": "~14.1.1",
+    "expo-secure-store": "^12.1.1",
     "expo-status-bar": "~1.4.4",
+    "i18next": "^22.5.1",
     "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.3.1",
     "react-native": "0.71.8",
-    "typescript": "^4.9.4"
+    "react-native-gesture-handler": "~2.9.0",
+    "react-native-paper": "^5.8.0",
+    "react-native-reanimated": "~2.14.4",
+    "react-native-safe-area-context": "4.5.0",
+    "react-native-screens": "^3.20.0",
+    "react-native-svg": "13.4.0",
+    "react-native-web": "~0.18.10",
+    "victory-native": "^35.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
+    "babel-preset-expo": "^9.3.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8",
+    "typescript": "^4.9.4"
   },
-  "private": true
+  "expo": {
+    "name": "financial-services-app",
+    "slug": "financial-services-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
 }
