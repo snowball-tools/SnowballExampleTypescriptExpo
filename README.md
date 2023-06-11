@@ -7,7 +7,6 @@ This is not designed to be a production app, but rather a quick example with loc
 ## Getting Started
 
 ```bash
-cd example-typescript-expo
 yarn install
 ```
 
