@@ -7,6 +7,14 @@ cd my-app
 yarn install
 ```
 
+### Linting
+
+using [typescript-eslint](https://typescript-eslint.io), set rules at `.eslintrc.js`
+
+```bash
+yarn eslint .
+```
+
 ## Usage
 
 To run the app in development mode, use:

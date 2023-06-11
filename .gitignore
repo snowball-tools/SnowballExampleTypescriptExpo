@@ -9,9 +9,13 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+<<<<<<< HEAD
 # Expo
 __generated__
 web-build
+=======
+__generated__
+>>>>>>> a9cf97d (init)
 bare-apps
 
 # macOS
@@ -19,6 +23,10 @@ bare-apps
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
+<<<<<<< HEAD
+=======
+
+>>>>>>> a9cf97d (init)
 # Node
 node_modules
 npm-debug.log
