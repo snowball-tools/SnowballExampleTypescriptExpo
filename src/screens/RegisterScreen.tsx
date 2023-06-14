@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button } from "react-native";
-import useTranslation from "../i18n"
+import useTranslation from "../i18n";
 import { StackScreenProps } from "@react-navigation/stack";
 import { AuthStackParamList } from "../navigation/StackParamList";
+import { SnowballStack, SnowballTextField, SnowballView } from "../components";
+import SnowballButton from "../components/SnowballButton";
 
 type Props = StackScreenProps<AuthStackParamList, "Register">;
 
@@ -17,22 +18,30 @@ const RegisterScreen: React.FC<Props> = ({ navigation }) => {
   };
 
   return (
-    <View>
-      <Text>{t("register")}</Text>
-      <TextInput
-        placeholder={t("email") || "email"}
-        value={email}
-        onChangeText={setEmail}
-      />
-      <TextInput
-        placeholder={t("password")}
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-      />
-      <Button title={t("register")} onPress={handleRegister} />
-      <Button title={t("login")} onPress={() => navigation.navigate("Login")} />
-    </View>
+    <SnowballView padding={10}>
+      <SnowballStack
+        distribution="space-between"
+        alignment="stretch"
+        spacing={10}
+      >
+        <SnowballTextField
+          placeholder={t("email") || "email"}
+          value={email}
+          onChangeText={setEmail}
+        />
+        <SnowballTextField
+          placeholder={t("password")}
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+        />
+        <SnowballButton title={t("register")} onPress={handleRegister} />
+        <SnowballButton
+          title={t("login")}
+          onPress={() => navigation.navigate("Login")}
+        />
+      </SnowballStack>
+    </SnowballView>
   );
 };
 

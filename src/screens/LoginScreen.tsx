@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button } from "react-native";
-import useTranslation from "../i18n"
+import useTranslation from "../i18n";
 import { StackScreenProps } from "@react-navigation/stack";
 import { AuthStackParamList } from "../navigation/StackParamList";
+import {
+  SnowballTextField,
+  SnowballButton,
+  SnowballStack,
+  SnowballView,
+} from "../components";
 
 type Props = StackScreenProps<AuthStackParamList, "Login">;
 
@@ -17,29 +22,34 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
   };
 
   return (
-    <View>
-      <Text>{t("login")}</Text>
-      <TextInput
-        placeholder={t("email")}
-        value={email}
-        onChangeText={setEmail}
-      />
-      <TextInput
-        placeholder={t("password")}
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-      />
-      <Button title={t("login")} onPress={handleLogin} />
-      <Button
-        title={t("register")}
-        onPress={() => navigation.navigate("Register")}
-      />
-      <Button
-        title={t("recoverPassword")}
-        onPress={() => navigation.navigate("Recover")}
-      />
-    </View>
+    <SnowballView padding={10}>
+      <SnowballStack
+        distribution="space-between"
+        alignment="stretch"
+        spacing={10}
+      >
+        <SnowballTextField
+          placeholder={t("email")}
+          value={email}
+          onChangeText={setEmail}
+        />
+        <SnowballTextField
+          placeholder={t("password")}
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+        />
+        <SnowballButton title={t("login")} onPress={handleLogin} />
+        <SnowballButton
+          title={t("register")}
+          onPress={() => navigation.navigate("Register")}
+        />
+        <SnowballButton
+          title={t("recoverPassword")}
+          onPress={() => navigation.navigate("Recover")}
+        />
+      </SnowballStack>
+    </SnowballView>
   );
 };
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import HomeScreen from "../screens/HomeScreen";
 import "react-native-gesture-handler";
 
+import HomeScreen from "../screens/HomeScreen";
 import { HomeStackParamList } from "./StackParamList";
 
 const Stack = createStackNavigator<HomeStackParamList>();
