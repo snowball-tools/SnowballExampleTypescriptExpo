@@ -58,7 +58,10 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "associatedDomains": [
+        "applinks:snowballtools.xyz"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
