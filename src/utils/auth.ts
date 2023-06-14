@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import * as SecureStore from "expo-secure-store";
 import { authenticate, register, recover, getUser } from "../api";
 
 type User = {
@@ -16,14 +15,6 @@ export const useAuth = () => {
   useEffect(() => {
     // Check if the user is already logged in when the app starts
     const checkUser = async () => {
-      const userId = await SecureStore.getItemAsync("userId");
-
-      if (userId) {
-        // Load user data from the server
-        const user = await getUser(userId);
-        setUser(user);
-      }
-
       setInitializing(false);
     };
 
@@ -35,27 +26,17 @@ export const useAuth = () => {
   //  DO NOT USE FOR PRODUCTION THIS IS A DEMO FUN EXPLORATION
   const login = async (email: string, password: string) => {
     const user = await authenticate(email, password);
-
-    // Save user ID in secure store
-    await SecureStore.setItemAsync("userId", user.id);
-
     setUser(user);
   };
 
   //  DO NOT USE FOR PRODUCTION THIS IS A DEMO FUN EXPLORATION
   const logout = async () => {
-    // Clear user ID from secure store
-    await SecureStore.deleteItemAsync("userId");
-
     setUser(null);
   };
 
   //  DO NOT USE FOR PRODUCTION THIS IS A DEMO FUN EXPLORATION
   const signUp = async (email: string, password: string) => {
     const user = await register(email, password);
-
-    // Save user ID in secure store
-    await SecureStore.setItemAsync("userId", user.id);
 
     setUser(user);
   };
