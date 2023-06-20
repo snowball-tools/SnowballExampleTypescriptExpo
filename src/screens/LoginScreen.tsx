@@ -1,8 +1,8 @@
 import React from "react";
 import useTranslation from "../i18n";
 import { StackScreenProps } from "@react-navigation/stack";
+import { SnowballView } from "../components";
 import { AuthStackParamList } from "../navigation/StackParamList";
-import { SnowballText, SnowballView } from "../components";
 import { getEnvVariable, EnvVariables } from "../utils/env";
 
 const projectId = getEnvVariable(EnvVariables.WALLETCONNECT_PROJECT_ID);
@@ -23,10 +23,7 @@ const providerMetadata = {
 type Props = StackScreenProps<AuthStackParamList, "Login">;
 
 const LoginScreen: React.FC<Props> = ({ navigation }) => {
-  return (
-    <SnowballView padding={10}>
-    </SnowballView>
-  );
+  return <SnowballView padding={10}></SnowballView>;
 };
 
 export default LoginScreen;

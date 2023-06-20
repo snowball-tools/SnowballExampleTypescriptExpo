@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "hanbitco",
-    "slug": "hanbitco",
+    "name": "snowball-example-typescript-expo",
+    "slug": "snowballtools",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
