@@ -13,6 +13,11 @@ const SnowballButton: React.FC<SnowballButtonProps> = ({ title, onPress }) => (
 );
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   button: {
     backgroundColor: "#007BFF",
     padding: 10,

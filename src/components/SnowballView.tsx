@@ -37,10 +37,18 @@ const SnowballView: React.FC<SnowballViewProps> = ({
   });
 
   return (
-    <View style={[paddingStyle.padding, style]} {...props}>
+    <View style={[paddingStyle.padding, styles.container, style]} {...props}>
       {children}
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
 
 export default SnowballView;

@@ -1,8 +1,8 @@
 import React from "react";
+import useTranslation from "../i18n";
 import { StackScreenProps } from "@react-navigation/stack";
-import { AuthStackParamList } from "../navigation/StackParamList";
-import { Web3Modal, Web3Button } from "@web3modal/react-native";
 import { SnowballView } from "../components";
+import { AuthStackParamList } from "../navigation/StackParamList";
 import { getEnvVariable, EnvVariables } from "../utils/env";
 
 const projectId = getEnvVariable(EnvVariables.WALLETCONNECT_PROJECT_ID);
@@ -23,12 +23,7 @@ const providerMetadata = {
 type Props = StackScreenProps<AuthStackParamList, "Login">;
 
 const LoginScreen: React.FC<Props> = ({ navigation }) => {
-  return (
-    <SnowballView padding={10}>
-      <Web3Button />
-      <Web3Modal projectId={projectId} providerMetadata={providerMetadata} />
-    </SnowballView>
-  );
+  return <SnowballView padding={10}></SnowballView>;
 };
 
 export default LoginScreen;
